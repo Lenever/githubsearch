@@ -14,6 +14,27 @@
 		23FEE1A329A018B3007663AF /* githubsearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1A229A018B3007663AF /* githubsearchTests.swift */; };
 		23FEE1AD29A018B3007663AF /* githubsearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1AC29A018B3007663AF /* githubsearchUITests.swift */; };
 		23FEE1AF29A018B3007663AF /* githubsearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1AE29A018B3007663AF /* githubsearchUITestsLaunchTests.swift */; };
+		23FEE1BD29A03268007663AF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1BC29A03267007663AF /* HomeView.swift */; };
+		23FEE1C029A03389007663AF /* Font+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1BF29A03389007663AF /* Font+UIFont.swift */; };
+		23FEE1C229A034FB007663AF /* Color+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1C129A034FB007663AF /* Color+UIColor.swift */; };
+		23FEE1C529A0381C007663AF /* RepositoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1C429A0381C007663AF /* RepositoriesView.swift */; };
+		23FEE1C929A0391B007663AF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1C829A0391B007663AF /* SearchView.swift */; };
+		23FEE1CB29A03959007663AF /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1CA29A03959007663AF /* LanguageView.swift */; };
+		23FEE1CD29A03986007663AF /* StarCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1CC29A03986007663AF /* StarCountView.swift */; };
+		23FEE1CF29A039CB007663AF /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1CE29A039CB007663AF /* EmptyStateView.swift */; };
+		23FEE1D129A03A25007663AF /* RepositoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1D029A03A25007663AF /* RepositoryView.swift */; };
+		23FEE1D429A03B07007663AF /* SearchRepositoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1D329A03B07007663AF /* SearchRepositoryResponse.swift */; };
+		23FEE1D629A03F12007663AF /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1D529A03F12007663AF /* RepositoriesViewModel.swift */; };
+		23FEE1D929A042E0007663AF /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1D829A042E0007663AF /* UsersView.swift */; };
+		23FEE1DB29A0437E007663AF /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1DA29A0437E007663AF /* UserView.swift */; };
+		23FEE1DD29A0446E007663AF /* FullUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1DC29A0446E007663AF /* FullUser.swift */; };
+		23FEE1E029A04AB8007663AF /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1DF29A04AB8007663AF /* UserDetailView.swift */; };
+		23FEE1E229A04B1F007663AF /* UserRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1E129A04B1F007663AF /* UserRepo.swift */; };
+		23FEE1E429A04B4A007663AF /* UserRepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1E329A04B4A007663AF /* UserRepoView.swift */; };
+		23FEE1E629A04B84007663AF /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1E529A04B84007663AF /* UsersViewModel.swift */; };
+		23FEE1E829A04DAC007663AF /* SearchUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1E729A04DAC007663AF /* SearchUserResponse.swift */; };
+		23FEE1EC29A13E1B007663AF /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1EB29A13E1B007663AF /* Images.swift */; };
+		23FEE1EE29A1A58F007663AF /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1ED29A1A58F007663AF /* UserDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +65,27 @@
 		23FEE1A829A018B3007663AF /* githubsearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = githubsearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23FEE1AC29A018B3007663AF /* githubsearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = githubsearchUITests.swift; sourceTree = "<group>"; };
 		23FEE1AE29A018B3007663AF /* githubsearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = githubsearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		23FEE1BC29A03267007663AF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		23FEE1BF29A03389007663AF /* Font+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+UIFont.swift"; sourceTree = "<group>"; };
+		23FEE1C129A034FB007663AF /* Color+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+UIColor.swift"; sourceTree = "<group>"; };
+		23FEE1C429A0381C007663AF /* RepositoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesView.swift; sourceTree = "<group>"; };
+		23FEE1C829A0391B007663AF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		23FEE1CA29A03959007663AF /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
+		23FEE1CC29A03986007663AF /* StarCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarCountView.swift; sourceTree = "<group>"; };
+		23FEE1CE29A039CB007663AF /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		23FEE1D029A03A25007663AF /* RepositoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryView.swift; sourceTree = "<group>"; };
+		23FEE1D329A03B07007663AF /* SearchRepositoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryResponse.swift; sourceTree = "<group>"; };
+		23FEE1D529A03F12007663AF /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
+		23FEE1D829A042E0007663AF /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		23FEE1DA29A0437E007663AF /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		23FEE1DC29A0446E007663AF /* FullUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullUser.swift; sourceTree = "<group>"; };
+		23FEE1DF29A04AB8007663AF /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		23FEE1E129A04B1F007663AF /* UserRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepo.swift; sourceTree = "<group>"; };
+		23FEE1E329A04B4A007663AF /* UserRepoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepoView.swift; sourceTree = "<group>"; };
+		23FEE1E529A04B84007663AF /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		23FEE1E729A04DAC007663AF /* SearchUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserResponse.swift; sourceTree = "<group>"; };
+		23FEE1EB29A13E1B007663AF /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		23FEE1ED29A1A58F007663AF /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +136,10 @@
 		23FEE19029A018B1007663AF /* githubsearch */ = {
 			isa = PBXGroup;
 			children = (
+				23FEE1D229A03AC2007663AF /* Models */,
+				23FEE1C629A038BC007663AF /* Common */,
+				23FEE1BE29A03364007663AF /* Extensions */,
+				23FEE1BB29A031DE007663AF /* UI */,
 				23FEE19129A018B1007663AF /* githubsearchApp.swift */,
 				23FEE19329A018B1007663AF /* ContentView.swift */,
 				23FEE19529A018B3007663AF /* Assets.xcassets */,
@@ -125,6 +171,87 @@
 				23FEE1AE29A018B3007663AF /* githubsearchUITestsLaunchTests.swift */,
 			);
 			path = githubsearchUITests;
+			sourceTree = "<group>";
+		};
+		23FEE1BB29A031DE007663AF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				23FEE1DE29A0453F007663AF /* UserDetail */,
+				23FEE1D729A042B1007663AF /* Users */,
+				23FEE1C329A03789007663AF /* Repositories */,
+				23FEE1BC29A03267007663AF /* HomeView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		23FEE1BE29A03364007663AF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				23FEE1BF29A03389007663AF /* Font+UIFont.swift */,
+				23FEE1EB29A13E1B007663AF /* Images.swift */,
+				23FEE1C129A034FB007663AF /* Color+UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		23FEE1C329A03789007663AF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				23FEE1C429A0381C007663AF /* RepositoriesView.swift */,
+				23FEE1D029A03A25007663AF /* RepositoryView.swift */,
+				23FEE1D529A03F12007663AF /* RepositoriesViewModel.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		23FEE1C629A038BC007663AF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				23FEE1C729A038D5007663AF /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		23FEE1C729A038D5007663AF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23FEE1C829A0391B007663AF /* SearchView.swift */,
+				23FEE1CA29A03959007663AF /* LanguageView.swift */,
+				23FEE1CC29A03986007663AF /* StarCountView.swift */,
+				23FEE1CE29A039CB007663AF /* EmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23FEE1D229A03AC2007663AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23FEE1D329A03B07007663AF /* SearchRepositoryResponse.swift */,
+				23FEE1DC29A0446E007663AF /* FullUser.swift */,
+				23FEE1E129A04B1F007663AF /* UserRepo.swift */,
+				23FEE1E729A04DAC007663AF /* SearchUserResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		23FEE1D729A042B1007663AF /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				23FEE1D829A042E0007663AF /* UsersView.swift */,
+				23FEE1DA29A0437E007663AF /* UserView.swift */,
+				23FEE1E529A04B84007663AF /* UsersViewModel.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		23FEE1DE29A0453F007663AF /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				23FEE1DF29A04AB8007663AF /* UserDetailView.swift */,
+				23FEE1E329A04B4A007663AF /* UserRepoView.swift */,
+				23FEE1ED29A1A58F007663AF /* UserDetailViewModel.swift */,
+			);
+			path = UserDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +384,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FEE1E429A04B4A007663AF /* UserRepoView.swift in Sources */,
+				23FEE1C529A0381C007663AF /* RepositoriesView.swift in Sources */,
+				23FEE1EE29A1A58F007663AF /* UserDetailViewModel.swift in Sources */,
+				23FEE1BD29A03268007663AF /* HomeView.swift in Sources */,
+				23FEE1EC29A13E1B007663AF /* Images.swift in Sources */,
 				23FEE19429A018B1007663AF /* ContentView.swift in Sources */,
+				23FEE1CD29A03986007663AF /* StarCountView.swift in Sources */,
+				23FEE1E029A04AB8007663AF /* UserDetailView.swift in Sources */,
+				23FEE1CB29A03959007663AF /* LanguageView.swift in Sources */,
+				23FEE1DB29A0437E007663AF /* UserView.swift in Sources */,
+				23FEE1D929A042E0007663AF /* UsersView.swift in Sources */,
+				23FEE1E629A04B84007663AF /* UsersViewModel.swift in Sources */,
+				23FEE1C929A0391B007663AF /* SearchView.swift in Sources */,
 				23FEE19229A018B1007663AF /* githubsearchApp.swift in Sources */,
+				23FEE1D629A03F12007663AF /* RepositoriesViewModel.swift in Sources */,
+				23FEE1D429A03B07007663AF /* SearchRepositoryResponse.swift in Sources */,
+				23FEE1CF29A039CB007663AF /* EmptyStateView.swift in Sources */,
+				23FEE1D129A03A25007663AF /* RepositoryView.swift in Sources */,
+				23FEE1E229A04B1F007663AF /* UserRepo.swift in Sources */,
+				23FEE1C229A034FB007663AF /* Color+UIColor.swift in Sources */,
+				23FEE1C029A03389007663AF /* Font+UIFont.swift in Sources */,
+				23FEE1E829A04DAC007663AF /* SearchUserResponse.swift in Sources */,
+				23FEE1DD29A0446E007663AF /* FullUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

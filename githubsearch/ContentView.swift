@@ -1,26 +1,30 @@
-//
-//  ContentView.swift
-//  githubsearch
-//
-//  Created by Ikechukwu Onuorah on 17/02/2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+  @State private var tabSelection = 1
+  var body: some View {
+    
+    TabView(selection: $tabSelection) {
+      HomeView(tabSelection: $tabSelection)
+        .tabItem {
+          Label("Home", image: "home")
+        }.tag(1)
+      
+      RepositoriesView()
+        .tabItem {
+          Label("Repository", image: "search")
+        }.tag(2)
+      
+      UsersView()
+        .tabItem {
+          Label("Users", image: "user")
+        }.tag(3)
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }
