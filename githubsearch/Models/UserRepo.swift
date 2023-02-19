@@ -23,21 +23,6 @@ struct UserRepo: Codable, Identifiable {
     case stargazersCount = "stargazers_count"
     case watchersCount = "watchers_count"
   }
-  
-  static var example = UserRepo(
-    id: nil,
-    nodeID: nil,
-    name: "Ugo",
-    fullName: "Ugo Val",
-    welcomePrivate: nil,
-    owner: nil,
-    updatedAt: nil,
-    language: "Vue",
-    description: "This is a mock",
-    size: nil,
-    stargazersCount: nil,
-    watchersCount: nil
-  )
 }
 
 

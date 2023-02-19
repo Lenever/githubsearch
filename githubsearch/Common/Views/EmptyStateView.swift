@@ -11,6 +11,7 @@ struct EmptyStateView: View {
 
       Text(message)
         .multilineTextAlignment(.center)
+        .padding()
       Spacer()
     }
   }

@@ -15,8 +15,6 @@ struct UsersView: View {
         )
 
         usersList
-
-        Spacer()
       }
       .padding()
     }
@@ -31,19 +29,26 @@ struct UsersView: View {
 
   @ViewBuilder
   var usersList: some View {
-    ScrollView(.vertical, showsIndicators: false) {
-      LazyVStack {
-        if let user = viewModel.users {
-          ForEach(user, id: \.id) { user in
-            NavigationLink(destination: UserDetailView(user: user)) {
-              UserView(user: user)
+    Group {
+      if let users = viewModel.users {
+        if users.count == 0 {
+          noResultView
+        } else {
+          ScrollView(.vertical, showsIndicators: false) {
+            LazyVStack {
+              if let users = viewModel.users {
+                ForEach(users, id: \.id) { user in
+                  NavigationLink(destination: UserDetailView(user: user)) {
+                    UserView(user: user)
+                  }
+                }
+              }
+              Spacer()
             }
           }
-        } else if viewModel.users.count < 1{
-          noResultView
-        }else {
-          noSearchView
         }
+      } else {
+        noSearchView
       }
     }
   }
