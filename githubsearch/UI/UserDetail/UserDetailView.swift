@@ -32,7 +32,7 @@ struct UserDetailView: View {
   var titleView: some View {
     HStack(alignment: .top, spacing: 15) {
       AsyncImage(url: URL(string: viewModel.user.avatarURL ?? ""), scale: 1)
-      { image in image.resizable() } placeholder: { Color.red } .frame(width: 45, height: 45) .clipShape(RoundedRectangle(cornerRadius: 22.5))
+      { image in image.resizable() } placeholder: { Color.textGrey } .frame(width: 45, height: 45) .clipShape(RoundedRectangle(cornerRadius: 22.5))
         .padding(.trailing, 5)
       
       VStack(alignment: .leading, spacing: 10) {

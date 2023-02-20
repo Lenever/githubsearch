@@ -39,7 +39,7 @@ struct RepositoryView: View {
   var titleView: some View {
     HStack(spacing: 0) {
       AsyncImage(url: URL(string: repository.owner?.avatarURL ?? ""), scale: 1)
-      { image in image.resizable() } placeholder: { Color.red } .frame(width: 28, height: 28) .clipShape(RoundedRectangle(cornerRadius: 14))
+      { image in image.resizable() } placeholder: { Color.textGrey } .frame(width: 28, height: 28) .clipShape(RoundedRectangle(cornerRadius: 14))
         .padding(.trailing, 5)
 
       Text(repository.owner?.login ?? "")

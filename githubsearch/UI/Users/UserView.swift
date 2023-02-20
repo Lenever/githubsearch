@@ -5,7 +5,7 @@ struct UserView: View {
   var body: some View {
     HStack(alignment: .top, spacing: 5) {
       AsyncImage(url: URL(string: user.avatarURL ?? ""), scale: 1)
-      { image in image.resizable() } placeholder: { Color.red } .frame(width: 28, height: 28) .clipShape(RoundedRectangle(cornerRadius: 14))
+      { image in image.resizable() } placeholder: { Color.textGrey } .frame(width: 28, height: 28) .clipShape(RoundedRectangle(cornerRadius: 14))
         .padding(.trailing, 5)
       
       VStack(alignment: .leading, spacing: 5) {
