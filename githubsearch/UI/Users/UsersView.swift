@@ -23,6 +23,7 @@ struct UsersView: View {
   var titleView: some View {
     HStack {
       Text("Users")
+        .font(.appHeaderFont)
       Spacer()
     }
   }
@@ -54,11 +55,11 @@ struct UsersView: View {
   }
 
   var noSearchView: some View {
-    EmptyStateView(message: "Search Github for users...", image: Images.emptySearch)
+    EmptyStateView(state: .noUserSearch)
   }
 
   var noResultView: some View {
-    EmptyStateView(message: "We’ve searched the ends of the earth and we’ve not found this user, please try again", image: Images.emptySearch)
+    EmptyStateView(state: .noUserSearchResult)
   }
 }
 

@@ -23,4 +23,3 @@ struct User: Codable, Identifiable {
     case followers, following
   }
 }
-

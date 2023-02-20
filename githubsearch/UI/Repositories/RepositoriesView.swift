@@ -21,6 +21,7 @@ struct RepositoriesView: View {
   var titleView: some View {
     HStack {
       Text("Repositories")
+        .font(.appHeaderFont)
       Spacer()
     }
   }
@@ -48,17 +49,11 @@ struct RepositoriesView: View {
   }
   
   var noSearchView: some View {
-    EmptyStateView(
-      message: "Search Github for repositories, issues and pull requests!",
-      image: Images.emptySearch
-    )
+    EmptyStateView(state: .noRepoSearch)
   }
   
   var noResultView: some View {
-    EmptyStateView(
-      message: "We’ve searched the ends of the earth, repository not found, please try again",
-      image: Images.emptySearch
-    )
+    EmptyStateView(state: .noRepoSearchResult)
   }
 }
 

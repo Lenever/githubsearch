@@ -8,11 +8,15 @@ final class UserDetailViewModel: ObservableObject {
 
   init(user: User) {
     self.user = user
+    fetchUserDetails()
+  }
+
+  func fetchUserDetails() {
     getUsersDetails()
     getUserRepoDetails()
   }
 
-  func getUsersDetails() {
+  private func getUsersDetails() {
     Task {
       do {
         let response = try await APIClient.shared.request(URL(string: user.url!)!, expectedResponseType: User.self)
@@ -24,7 +28,7 @@ final class UserDetailViewModel: ObservableObject {
     }
   }
 
-  func getUserRepoDetails() {
+  private func getUserRepoDetails() {
     Task {
       do {
         let response = try await APIClient.shared.request(URL(string: user.reposURL!)!, expectedResponseType: [Repository].self)

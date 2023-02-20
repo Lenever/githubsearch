@@ -10,9 +10,11 @@ struct UserDetailView: View {
   var body: some View {
     VStack(alignment: .leading, spacing: 15) {
       titleView
-      
-      Text(viewModel.user.bio ?? "")
-        .font(.appSemiBoldMediumFont)
+
+      if let bio = viewModel.user.bio {
+        Text(bio)
+          .font(.appSemiBoldMediumFont)
+      }
       
       HStack(spacing: 15) {
         locationView
@@ -24,6 +26,7 @@ struct UserDetailView: View {
       Spacer()
     }
     .padding()
+    .onAppear { viewModel.fetchUserDetails() }
   }
   
   var titleView: some View {
@@ -33,9 +36,12 @@ struct UserDetailView: View {
         .padding(.trailing, 5)
       
       VStack(alignment: .leading, spacing: 10) {
-        Text(viewModel.user.name ?? "").foregroundColor(.pillText).font(.appSemiBoldLargeFont)
-        Text(viewModel.user
-          .login ?? "").font(.appSemiBoldMediumFont)
+        Text(viewModel.user.name ?? "")
+          .foregroundColor(.black)
+          .font(.appSemiBoldLargeFont)
+
+        Text(viewModel.user.login ?? "")
+          .font(.appSemiBoldMediumFont)
       }
       
       Spacer()
@@ -101,10 +107,7 @@ struct UserDetailView: View {
           }
         }
       } else {
-        EmptyStateView(
-          message: "This user  doesn’t have repositories yet, come back later :-)",
-          image: Images.emptyRepo
-        )
+        EmptyStateView(state: .noUserRepo)
       }
 
     }
