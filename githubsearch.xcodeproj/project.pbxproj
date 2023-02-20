@@ -27,9 +27,9 @@
 		23FEE1D629A03F12007663AF /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1D529A03F12007663AF /* RepositoriesViewModel.swift */; };
 		23FEE1D929A042E0007663AF /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1D829A042E0007663AF /* UsersView.swift */; };
 		23FEE1DB29A0437E007663AF /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1DA29A0437E007663AF /* UserView.swift */; };
-		23FEE1DD29A0446E007663AF /* FullUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1DC29A0446E007663AF /* FullUser.swift */; };
+		23FEE1DD29A0446E007663AF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1DC29A0446E007663AF /* User.swift */; };
 		23FEE1E029A04AB8007663AF /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1DF29A04AB8007663AF /* UserDetailView.swift */; };
-		23FEE1E229A04B1F007663AF /* UserRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1E129A04B1F007663AF /* UserRepo.swift */; };
+		23FEE1E229A04B1F007663AF /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1E129A04B1F007663AF /* Repository.swift */; };
 		23FEE1E429A04B4A007663AF /* UserRepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1E329A04B4A007663AF /* UserRepoView.swift */; };
 		23FEE1E629A04B84007663AF /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1E529A04B84007663AF /* UsersViewModel.swift */; };
 		23FEE1E829A04DAC007663AF /* SearchUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1E729A04DAC007663AF /* SearchUserResponse.swift */; };
@@ -79,9 +79,9 @@
 		23FEE1D529A03F12007663AF /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
 		23FEE1D829A042E0007663AF /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		23FEE1DA29A0437E007663AF /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
-		23FEE1DC29A0446E007663AF /* FullUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullUser.swift; sourceTree = "<group>"; };
+		23FEE1DC29A0446E007663AF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		23FEE1DF29A04AB8007663AF /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
-		23FEE1E129A04B1F007663AF /* UserRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepo.swift; sourceTree = "<group>"; };
+		23FEE1E129A04B1F007663AF /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		23FEE1E329A04B4A007663AF /* UserRepoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepoView.swift; sourceTree = "<group>"; };
 		23FEE1E529A04B84007663AF /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		23FEE1E729A04DAC007663AF /* SearchUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserResponse.swift; sourceTree = "<group>"; };
@@ -231,8 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				23FEE1D329A03B07007663AF /* SearchRepositoryResponse.swift */,
-				23FEE1DC29A0446E007663AF /* FullUser.swift */,
-				23FEE1E129A04B1F007663AF /* UserRepo.swift */,
+				23FEE1DC29A0446E007663AF /* User.swift */,
+				23FEE1E129A04B1F007663AF /* Repository.swift */,
 				23FEE1E729A04DAC007663AF /* SearchUserResponse.swift */,
 			);
 			path = Models;
@@ -422,11 +422,11 @@
 				23FEE1D429A03B07007663AF /* SearchRepositoryResponse.swift in Sources */,
 				23FEE1CF29A039CB007663AF /* EmptyStateView.swift in Sources */,
 				23FEE1D129A03A25007663AF /* RepositoryView.swift in Sources */,
-				23FEE1E229A04B1F007663AF /* UserRepo.swift in Sources */,
+				23FEE1E229A04B1F007663AF /* Repository.swift in Sources */,
 				23FEE1C229A034FB007663AF /* Color+UIColor.swift in Sources */,
 				23FEE1C029A03389007663AF /* Font+UIFont.swift in Sources */,
 				23FEE1E829A04DAC007663AF /* SearchUserResponse.swift in Sources */,
-				23FEE1DD29A0446E007663AF /* FullUser.swift in Sources */,
+				23FEE1DD29A0446E007663AF /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

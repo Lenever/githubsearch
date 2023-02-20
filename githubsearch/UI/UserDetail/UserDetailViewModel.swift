@@ -1,12 +1,9 @@
 import Foundation
 
+@MainActor
 final class UserDetailViewModel: ObservableObject {
   @Published var user: User
-  @Published var fullUser: FullUser?
-//  @Published var user: [FullUser] = []
-  @Published var userRepos: [UserRepo] = []
-  @Published var userUrl: String = ""
-  @Published var repoUrl: String = ""
+  @Published var userRepos: [Repository] = []
   @Published var error: Error?
 
   init(user: User) {
@@ -18,9 +15,8 @@ final class UserDetailViewModel: ObservableObject {
   func getUsersDetails() {
     Task {
       do {
-        let response = try await APIClient.shared.request(URL(string: user.url!)!, expectedResponseType: FullUser.self)
-        self.fullUser = response
-        print(response, "MMM")
+        let response = try await APIClient.shared.request(URL(string: user.url!)!, expectedResponseType: User.self)
+        self.user = response
       } catch {
         self.error = error
         print(error)
@@ -31,9 +27,8 @@ final class UserDetailViewModel: ObservableObject {
   func getUserRepoDetails() {
     Task {
       do {
-        let response = try await APIClient.shared.request(URL(string: user.reposURL!)!, expectedResponseType: [UserRepo].self)
+        let response = try await APIClient.shared.request(URL(string: user.reposURL!)!, expectedResponseType: [Repository].self)
         self.userRepos = response//.sorted { $0.updatedAt > $1.updatedAt }
-        print(response, "MMM")
       } catch {
         self.error = error
         print(error)

@@ -1,19 +1,20 @@
 import Foundation
 
 // MARK: - WelcomeElement
-struct UserRepo: Codable, Identifiable {
+struct Repository: Codable, Identifiable {
   let id: Int?
-  let nodeID, name, fullName: String?
+  let name, fullName: String?
   let welcomePrivate: Bool?
   let owner: RepoOwner?
   let updatedAt: String?
   let language: String?
   let description: String?
   let size, stargazersCount, watchersCount: Int?
+  let watchers: Int?
+  let topics: [String]?
   
   enum CodingKeys: String, CodingKey {
     case id
-    case nodeID = "node_id"
     case name
     case fullName = "full_name"
     case welcomePrivate = "private"
@@ -22,6 +23,8 @@ struct UserRepo: Codable, Identifiable {
     case size, language, description
     case stargazersCount = "stargazers_count"
     case watchersCount = "watchers_count"
+    case topics
+    case watchers
   }
 }
 

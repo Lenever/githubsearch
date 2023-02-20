@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct UserRepoView: View {
-  var repo: UserRepo
+  var repo: Repository
   
   var body: some View {
     VStack(alignment: .leading, spacing: 5) {

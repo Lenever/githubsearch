@@ -11,7 +11,7 @@ struct UserDetailView: View {
     VStack(alignment: .leading, spacing: 15) {
       titleView
       
-      Text(viewModel.fullUser?.bio ?? "")
+      Text(viewModel.user.bio ?? "")
         .font(.appSemiBoldMediumFont)
       
       HStack(spacing: 15) {
@@ -28,13 +28,14 @@ struct UserDetailView: View {
   
   var titleView: some View {
     HStack(alignment: .top, spacing: 15) {
-      AsyncImage(url: URL(string: viewModel.fullUser?.avatarURL ?? ""), scale: 1)
+      AsyncImage(url: URL(string: viewModel.user.avatarURL ?? ""), scale: 1)
       { image in image.resizable() } placeholder: { Color.red } .frame(width: 45, height: 45) .clipShape(RoundedRectangle(cornerRadius: 22.5))
         .padding(.trailing, 5)
       
       VStack(alignment: .leading, spacing: 10) {
-        Text(viewModel.fullUser?.name ?? "").foregroundColor(.pillText).font(.appSemiBoldLargeFont)
-        Text(viewModel.fullUser?.login ?? "").font(.appSemiBoldMediumFont)
+        Text(viewModel.user.name ?? "").foregroundColor(.pillText).font(.appSemiBoldLargeFont)
+        Text(viewModel.user
+          .login ?? "").font(.appSemiBoldMediumFont)
       }
       
       Spacer()
@@ -44,7 +45,7 @@ struct UserDetailView: View {
   var locationView: some View {
     HStack {
       Image(systemName: "mappin.circle")
-      Text(viewModel.fullUser?.location ?? "")
+      Text(viewModel.user.location ?? "")
       
     }
     .font(.appMediumFont)
@@ -53,7 +54,7 @@ struct UserDetailView: View {
   var linkView: some View {
     HStack {
       Image(systemName: "link")
-      Text(viewModel.fullUser?.htmlURL ?? "")
+      Text(viewModel.user.htmlURL ?? "")
     }
     .font(.appMediumFont)
     .foregroundColor(.gray)
@@ -62,9 +63,9 @@ struct UserDetailView: View {
   var followView: some View {
     HStack {
       Image(systemName: "person.3.sequence")
-      Text(String(viewModel.fullUser?.followers ?? 0))
+      Text(String(viewModel.user.followers ?? 0))
       Text("followers.")
-      Text(String(viewModel.fullUser?.following ?? 0))
+      Text(String(viewModel.user.following ?? 0))
       Text("following")
     }
     .font(.appMediumFont)
