@@ -1,7 +1,7 @@
 import Foundation
 
 // MARK: - User
-struct User: Codable, Identifiable {
+struct User: Codable, Identifiable, Equatable {
   let login: String?
   let id: Int?
   let avatarURL: String?

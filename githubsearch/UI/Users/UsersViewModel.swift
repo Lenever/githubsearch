@@ -16,15 +16,15 @@ final class UsersViewModel: ObservableObject {
 
   func getUsersListData() {
     if searchText.isEmpty {
-      self.users = []
+      self.users = nil
     } else {
       Task {
         do {
           let users = try await searchRepository.fetchUsers(searchText: searchText)
           self.users = users
         } catch {
-          self.error = error
           self.users = []
+          self.error = error
         }
       }
     }

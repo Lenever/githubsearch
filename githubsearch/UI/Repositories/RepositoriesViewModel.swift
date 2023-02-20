@@ -23,8 +23,8 @@ final class RepositoriesViewModel: ObservableObject {
           let repositories = try await searchRepository.fetchRepos(searchText: searchText)
           self.repositories = repositories
         } catch {
-          self.error = error
           self.repositories = []
+          self.error = error
         }
       }
     }
