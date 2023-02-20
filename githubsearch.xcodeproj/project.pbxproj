@@ -36,6 +36,7 @@
 		23FEE1EC29A13E1B007663AF /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1EB29A13E1B007663AF /* Images.swift */; };
 		23FEE1EE29A1A58F007663AF /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1ED29A1A58F007663AF /* UserDetailViewModel.swift */; };
 		23FEE1F129A26752007663AF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1F029A26752007663AF /* APIClient.swift */; };
+		23FEE1F429A38C9D007663AF /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEE1F329A38C9D007663AF /* SearchRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		23FEE1EB29A13E1B007663AF /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		23FEE1ED29A1A58F007663AF /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		23FEE1F029A26752007663AF /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		23FEE1F329A38C9D007663AF /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 		23FEE1F229A26EE1007663AF /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				23FEE1F329A38C9D007663AF /* SearchRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 			files = (
 				23FEE1E429A04B4A007663AF /* UserRepoView.swift in Sources */,
 				23FEE1C529A0381C007663AF /* RepositoriesView.swift in Sources */,
+				23FEE1F429A38C9D007663AF /* SearchRepository.swift in Sources */,
 				23FEE1EE29A1A58F007663AF /* UserDetailViewModel.swift in Sources */,
 				23FEE1BD29A03268007663AF /* HomeView.swift in Sources */,
 				23FEE1EC29A13E1B007663AF /* Images.swift in Sources */,

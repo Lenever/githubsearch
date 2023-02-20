@@ -5,9 +5,14 @@ final class RepositoriesViewModel: ObservableObject {
   @Published var repositories: [Repository]?
   @Published var searchText: String = ""
   @Published var error: Error?
-  var pageNumber : Int?
-  
-  init() {}
+
+  var searchRepository: GitSearchRepository
+
+  init(
+    searchRepository: GitSearchRepository = RemoteSearchRepository()
+  ) {
+    self.searchRepository = searchRepository
+  }
   
   func getReposListData() {
     if searchText.isEmpty {
@@ -15,13 +20,11 @@ final class RepositoriesViewModel: ObservableObject {
     } else {
       Task {
         do {
-          let response = try await APIClient.shared.request(URL(string: "https://api.github.com/search/repositories?q=\(searchText)")!, expectedResponseType: SearchRepositoryResponse.self)
-          self.repositories = response.items
-          print(response)
+          let repositories = try await searchRepository.fetchRepos(searchText: searchText)
+          self.repositories = repositories
         } catch {
           self.error = error
           self.repositories = []
-          print(error)
         }
       }
     }

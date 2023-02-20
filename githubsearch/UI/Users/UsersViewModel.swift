@@ -6,7 +6,13 @@ final class UsersViewModel: ObservableObject {
   @Published var searchText: String = ""
   @Published var error: Error?
 
-  init() {}
+  var searchRepository: GitSearchRepository
+
+  init(
+    searchRepository: GitSearchRepository = RemoteSearchRepository()
+  ) {
+    self.searchRepository = searchRepository
+  }
 
   func getUsersListData() {
     if searchText.isEmpty {
@@ -14,13 +20,11 @@ final class UsersViewModel: ObservableObject {
     } else {
       Task {
         do {
-          let response = try await APIClient.shared.request(URL(string: "https://api.github.com/search/users?q=\(searchText)")!, expectedResponseType: SearchUserResponse.self)
-          self.users = response.items
-          print(response)
+          let users = try await searchRepository.fetchUsers(searchText: searchText)
+          self.users = users
         } catch {
           self.error = error
           self.users = []
-          print(error)
         }
       }
     }
