@@ -1,5 +1,6 @@
 # githubsearch
-A mobile app for searching github repos and user details
+A mobile app for searching github repos and user details.
+A demo for this project can be found here [here](https://drive.google.com/file/d/1t4YR2sl3xcdV_UtIJX2dpaWb6d7h16_w/view?usp=sharing)
 
 ## What is the github search app about?
 This is a mobile application where you can search for and see details of users and repos on Github
